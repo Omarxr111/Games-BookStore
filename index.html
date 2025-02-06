@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Unique Games Bookstore</title>
+
+  <!-- Optimized Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo"><a href="#">Unique<span class="sub-header"><sup>Games</sup></span></a></div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+              <a href="#" class="desktop-link">Features</a>
+              <input type="checkbox" id="show-features">
+              <label for="show-features">Features</label>
+              <ul>
+                <li><a href="#">Drop Menu 1</a></li>
+                <li><a href="#">Drop Menu 2</a></li>
+                <li><a href="#">Drop Menu 3</a></li>
+                <li><a href="#">Drop Menu 4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="desktop-link">Services</a>
+              <input type="checkbox" id="show-services">
+              <label for="show-services">Services</label>
+              <ul>
+                <li><a href="#">Drop Menu 1</a></li>
+                <li><a href="#">Drop Menu 2</a></li>
+                <li><a href="#">Drop Menu 3</a></li>
+                <li>
+                  <a href="#" class="desktop-link">More Items</a>
+                  <input type="checkbox" id="show-items">
+                  <label for="show-items">More Items</label>
+                  <ul>
+                    <li><a href="#">Sub Menu 1</a></li>
+                    <li><a href="#">Sub Menu 2</a></li>
+                    <li><a href="#">Sub Menu 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+        <form action="#" class="search-box">
+          <input type="text" placeholder="Search a Unique Game..." required>
+          <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </form>
+      </nav>
+    </div> <!--container-->
+  </header>
+  <main>
+    <div class="container main-container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="game-card">
+
+              <div class="game-card-left-sidebar">
+                <img class="game-icon" src="images/icon.png" alt=""  loading="lazy">
+              </div>
+              <div class="game-card-right-main">
+                <h2 class="game-title">Soul Reaper</h2>
+                <p class="game-categories">RPG * Strategy * Stylised</p>
+                <p class="game-description">Lorem ipsum dolor sit, Facere a tempore, dignissmos odit accusantium repellat
+                  quidem, sit molestias dolorum placeat quas debitis ipsum esse rerum?</p>
+              </div>
+      
+              <div class="button-section">
+                <button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="game-card">
+
+              <div class="game-card-left-sidebar">
+                <img class="game-icon" src="images/icon.png" alt=""  loading="lazy">
+              </div>
+              <div class="game-card-right-main">
+                <h2 class="game-title">Soul Reaper</h2>
+                <p class="game-categories">RPG * Strategy * Stylised</p>
+                <p class="game-description">Lorem ipsum dolor sit, Facere a tempore, dignissmos odit accusantium repellat
+                  quidem, sit molestias dolorum placeat quas debitis ipsum esse rerum?</p>
+              </div>
+      
+              <div class="button-section">
+                <button>Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="game-card">
+
+              <div class="game-card-left-sidebar">
+                <img class="game-icon" src="images/icon.png" alt=""  loading="lazy">
+              </div>
+              <div class="game-card-right-main">
+                <h2 class="game-title">Soul Reaper</h2>
+                <p class="game-categories">RPG * Strategy * Stylised</p>
+                <p class="game-description">Lorem ipsum dolor sit, Facere a tempore, dignissmos odit accusantium repellat
+                  quidem, sit molestias dolorum placeat quas debitis ipsum esse rerum?</p>
+              </div>
+      
+              <div class="button-section">
+                <button>Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+      loop: false,
+      keyboard: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
